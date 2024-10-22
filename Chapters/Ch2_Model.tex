@@ -5,7 +5,7 @@ At first, the training set we are using is something similar to the following:
 \begin{table}[h]
     \centering
     \begin{tabular}{c c}
-        \textbf{Size in feet$^2$($x$)}&\textbf{Price(\$) in 1000's($y$)}\\
+        \textbf{Size in feet$^2$($x$)}&\textbf{\color{red}Price(\$) in 1000's($y$)}\\
         \hline
         2104&460\\
         1416&232\\
@@ -36,12 +36,12 @@ where $\theta_0$ and $\theta_1$ are the parameters of the line.\footnote{
  }
 \textbf{Question: How can we choose $\theta_0, \theta_1$?} Intuitively one can choose the parameters associated with the line $h_\theta(x)$ which is as closest as possible to the given $y$. Very often these parameters are the ones which solve the following problem: 
 \begin{equation}\label{eq:ls1}
-    \min_{\theta_0, \theta_1} {\frac{1}{m} \sum_{i=1}^{m}{
+    \min_{\theta_0, \theta_1} \overbrace{\frac{1}{m} \sum_{i=1}^{m}{
         \frac{1}{2} \bigl(
             \underbrace{h_\theta(x^{(i)})}_{\textsf{predicted value}}-
             \underbrace{y^{(i)}}_{\textsf{actual value}}
             \bigr)^2
-    }}
+    }}^{\textsf{SQUARE ERROR COST FUNCTION}}
 \end{equation}
 The function $\frac{1}{2} (
     h_\theta(x^{(i)})-y^{(i)})^2$ is the \textsf{Loss}($h_\theta(x), y$) or \textsf{Cost}($h_\theta(x),y$).  If we call $J(\theta_0, \theta_1)$ the argument of the minimization problem the (\ref{eq:ls1}), the problem to solve can be expressed as
@@ -145,3 +145,6 @@ where the $X$ matrix contains the dataset features and $y$ is the vector with th
 }
 
 \section{Polynomial regression}
+Not rarely can happen that a linear hypotesis is not satisfactory for our task of regression and so could be useful to introduce some other features by doing the so-called \textit{handcrafting}. The derived features can be nonlinear, and specifically polynomial, combination of the available features. In the case of the price predition the handcrafted features could be for example the square of the size and the cube of the size. 
+
+
