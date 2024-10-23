@@ -311,3 +311,10 @@ In the past, when not too much data was available the ratios were 60\%, 20\%, 20
     \item[Cross-Validation/Development set] Is the set used for evaluating different models (not necessarily different architectures, but also different hyperparameters). The data distribution should match with the one in the training set. The validation set which is used, clearly is the same for all the selected models.
     \item[Test set] Once the model has been chosen a test on data that the network has never seen should be done. Such data can be extracted from the dataset, or coming from other sources making optional the presence of this type of set.
 \end{description}
+
+Once having defined how it is split the dataset, the \textbf{model selection} takes place, performing the following procedure. Given different models:
+\begin{itemize}
+    \item I minimize the cost function on the training set finding the parameters for each of them; 
+    \item Compute the cross-validation error (on the validation set) using the output parameters for that model; 
+    \item Chosse the model with the lowest error, then evaluate the \textbf{generalization performances} (using the \textit{test set}).
+\end{itemize}
