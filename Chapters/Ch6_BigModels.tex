@@ -90,9 +90,76 @@ Let us make another objection on the cost function, we have seen which is a fund
 In the case that in the functional there are \textbf{plateaus} can be a problem, since being the derivatives constant the learning is very slow.
 
 \subsection{Exploding/Vanishing gradients and initialization in DNN}
+The \textbf{exploding} and \textbf{vanishing gradient} are both problems related to very deep networks were the weights are too high or too low, in the former case the computed gradients \textit{grow exponentially}, in the latter case they decrease their own value till they become null.\\
+For sake of simplicity suppose that the activation function is a line $g(z)=z$, moreover let $b=0$, than the predicted output $\hat{y}$ has the shape:
+
+\begin{equation*}
+    \hat{y}=W^{[L]}W^{[L-1]}...W^{[1]}{x}
+\end{equation*}
+Whether for example the weights were all equal to 1.5 the $\hat{y}$ would be very big, on the other hand, whether all of the weights were 0.5 there would be an \textit{exponential decreasing} of the activations, a similar situation occur for the derivatives. In deep neural networks not rarely such problems appear, and differently from the \textbf{shallow neural networks} a more accurate technique aimed to cope with them is needed. In particular, has been empirically demonstrated that such a problem is reduced when the weights $w^{[l]}$ of a certain layer $l$ are randomly initialized with a value in the range $[0,1]$ multiplied by the standard deviation
+\begin{equation*}
+    \sigma^{[l]}=\sqrt{\frac{1}{n^{[l-1]}}}
+\end{equation*}
+where $n^{[l-1]}$ is the number of unit of the $(l-1)$-th layer (previous layer).
+
 
 \subsection{Batch normalization}
+We have seen in the introduction in order to speedup the training phase a proper choice when data are on completely different scales is the \textbf{normalization}. To better clarify such an aspect, we can say that 2 different steps are performed\footnote{
+    The same $\mu$, $\sigma$ are supposed to be used in order to normalize also the remaing parts of the dataset: \textit{test} and \textit{development} set.
+}:
+\begin{itemize}
+    \itemsep-0.3em
+    \item Subtract the mean $\mu$ computed on that feature on the whole dataset (to be computed a-priori); 
+    \item Divide by standard deviation $\sigma$ computed always over the whole training set for that specific feature.
+\end{itemize}
+In the past years, scientists working on deep learning has showed that if such a normalization is applied also for the activations (more specifically to the linear part $z$), then the learning of the parameters for a certain level is \textbf{faster}. This is the main feature behind the \textbf{batch normalization}. We know that for a certain layer $l$, we can compute the activation $A^{[l]}$ as:
+\begin{equation*}
+    A^{[l]}=g(Z^{[l]})
+\end{equation*}
+then the \textit{batch normalization} procedure is carried out as follows:
+\begin{itemize}
+    \itemsep-0.3em
+    \item For each layer $l$, for each feature $i$, the mean $\mu$ and variance $\sigma^2$ are computed.
+    \item The normalized data $Z^{[l](i)}_{\text{norm}}$ are obtained as follows:
+    \begin{equation*}
+        Z^{[l](i)}_{\text{norm}}=\frac{
+            Z^{[l](i)}-\mu
+        }{
+            \sqrt{\sigma^2+\varepsilon}
+        }
+    \end{equation*}
+    \item For the training phase the following data are used:
+    {\large{
+        \begin{equation}\label{eq:batch_normalization}
+            \tilde{Z}^{[l](i)}={\color{red}\gamma}{Z}^{[l](i)}_{\text{norm}}+{\color{red}\eta}
+        \end{equation}
+    }}
+\end{itemize}
+This approach, fortunately or not, leads with it other hyperparameters which are $\varepsilon, \gamma, \eta$. Moreover, just to further complicate the situation, for each layer different $\gamma^{[l]}$ and $\eta^{[l]}$ could be used. It is interesting now, after this formal description to better understand what are the guidelines leading to batch normalization and what is its effect. \\
+In principle when I perform the normalization on the input data (remind they are also called 0-layer activations) after the first forward step, I completely lose the effect since the first-layer activations are something very different than the \textit{normal} range. Moreover batch normalization also has a \textit{slight regularization effect}: the fact that mean and variance are computed with respect to that mini-batch adds similarly than \textit{dropout} adds some noise to each hidden layer activations. 
 
 \subsection{Softmax Layer}
+At the beginning we have seen that the hypotesis (later called \textit{activation}) can be interpreted as the probability of belonging to a certain class given the records X, but how can be interpreted as a result? We would like to have on the last layer $L$ a some probability that, differently from the other sum up to one. For this reason, very often in the neurons of the last layer a particular activation function is used: 
+\begin{equation} \label{eq: Softmax}
+    a_i^{[L]}=\frac{t_i}{\sum_{j=1}^{n^{[L]}}{t_j}}
+\end{equation}
+where $a_i^{[L]}$ is the activations for the $i-th$ unit in layer $L$, and $t_i\doteq{e^{z_{i}^{[L]}}}$. When the softmax activation function is used, the loss function to be used is the following (\textit{for a single training sample}): 
+\begin{equation}\label{eq:loss_softmax}
+    \text{Loss}^{(i)}(\hat{y}, y)=\sum_{j=1}^{n^{[L]}} -y_{j} \log(\hat{y}_j)
+\end{equation}
+Note that $n^{[L]}$ is the number of classes, in this case for the $m$ training samples the \textbf{one-hot encoding} is used for representing the labels, in particular:
+\begin{equation}\label{eq: one_hot}
+    Y=\big[
+        y^{(1)} \quad y^{(2)} \quad ... \quad y^{(m)}
+    \big] = \begin{bmatrix}
+        0&1& &0\\
+        1&0& &1\\
+        0&0&...&0\\
+        0&0& &0
+    \end{bmatrix} \in \mathbb{R}^{n^{[L]}, m}
+\end{equation}
+For each example a vector in which only $i$-th element is one with correspondence to the true class for that record.
 
 \subsection{Transfer learning}
+Especially in the field of deep learning, rarely one starts from scratches to develop the neural network. There are several motivations for which this is not happening, a common one is that there is lack of resources. To the aim to train certain models several dozens of GPU could be required... The \textbf{Transfer learning} aids us to cope with this problem. It consists in the use of a part of a pre-trained model in order to use its parameters as input features for a task of us. Then, by doing the so called, \textbf{surgery of the network} several layers are freezed,in the sense that only the forward step is done on these, while the parameters are updated only for the few last layers. The difference is that if we had started from scratches a lot of time and hardware/software resources would have been needed. This is one of the best common practice of the deep models.\\
+\textbf{Can we always use transfer learning?} The answer is clearly No! You can pass by this procedure: either when two tasks have common inputs, or you have more data for a task then for another, or also low level features for a task could be useful for the other.
