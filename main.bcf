@@ -2369,6 +2369,37 @@
     <bcf:citekey order="6" intorder="1">NetInNet</bcf:citekey>
     <bcf:citekey order="7" intorder="1">Inception</bcf:citekey>
     <bcf:citekey order="8" intorder="1">NetInNet</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">sermanet_overfeat_2014</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">sermanet_overfeat_2014</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">sermanet_overfeat_2014</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">girshick2014rich</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">DBLP:journals/corr/Girshick15</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">DBLP:journals/corr/Girshick15</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">DBLP:journals/corr/RenHG015</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">DBLP:journals/corr/RenHG015</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">redmon2016you</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">redmon2016you</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">noh2015learning</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">noh2015learning</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">noh2015learning</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">badrinarayanan2017segnet</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">badrinarayanan2017segnet</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">noh2015learning</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">noh2015learning</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">ronneberger2015u</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">ronneberger2015u</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">paszke2016enet</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">paszke2016enet</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">he2017mask</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">he2017mask</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">he2017mask</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">he2017mask</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">schroff2015facenet</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">schroff2015facenet</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">schroff2015facenet</bcf:citekey>
+    <bcf:citekey order="37" intorder="1">gatys2015neural</bcf:citekey>
+    <bcf:citekey order="38" intorder="1">gatys2015neural</bcf:citekey>
+    <bcf:citekey order="39" intorder="1">gatys2015neural</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

@@ -139,6 +139,522 @@
       \field{title}{Network in network}
       \field{year}{2013}
     \endentry
+    \entry{badrinarayanan2017segnet}{article}{}
+      \name{author}{3}{}{%
+        {{hash=2b517df4f81c42dc3c5b32aede012cf9}{%
+           family={Badrinarayanan},
+           familyi={B\bibinitperiod},
+           given={Vijay},
+           giveni={V\bibinitperiod}}}%
+        {{hash=4b1053f4ffb69cd61c1f122cc435c884}{%
+           family={Kendall},
+           familyi={K\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod}}}%
+        {{hash=95c5bd0a1d6e6649ed56043a63268bfa}{%
+           family={Cipolla},
+           familyi={C\bibinitperiod},
+           given={Roberto},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{fb26318591964ff2e23ee05578819393}
+      \strng{fullhash}{fb26318591964ff2e23ee05578819393}
+      \strng{bibnamehash}{fb26318591964ff2e23ee05578819393}
+      \strng{authorbibnamehash}{fb26318591964ff2e23ee05578819393}
+      \strng{authornamehash}{fb26318591964ff2e23ee05578819393}
+      \strng{authorfullhash}{fb26318591964ff2e23ee05578819393}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE transactions on pattern analysis and machine intelligence}
+      \field{number}{12}
+      \field{title}{Segnet: A deep convolutional encoder-decoder architecture for image segmentation}
+      \field{volume}{39}
+      \field{year}{2017}
+      \field{pages}{2481\bibrangedash 2495}
+      \range{pages}{15}
+    \endentry
+    \entry{gatys2015neural}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=b463321fbc7e07dca928b179ef786d43}{%
+           family={Gatys},
+           familyi={G\bibinitperiod},
+           given={Leon\bibnamedelima A},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=76032390b4e0ce051a46193f6091dc26}{%
+           family={Ecker},
+           familyi={E\bibinitperiod},
+           given={Alexander\bibnamedelima S},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=653ad8c2337d9615a186b743cc8d69a5}{%
+           family={Bethge},
+           familyi={B\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{467d36c2c62b4f85d9a0e313c593bf43}
+      \strng{fullhash}{467d36c2c62b4f85d9a0e313c593bf43}
+      \strng{bibnamehash}{467d36c2c62b4f85d9a0e313c593bf43}
+      \strng{authorbibnamehash}{467d36c2c62b4f85d9a0e313c593bf43}
+      \strng{authornamehash}{467d36c2c62b4f85d9a0e313c593bf43}
+      \strng{authorfullhash}{467d36c2c62b4f85d9a0e313c593bf43}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}
+      \field{title}{A Neural Algorithm of Artistic Style}
+      \field{year}{2015}
+      \field{pages}{2414\bibrangedash 2423}
+      \range{pages}{10}
+    \endentry
+    \entry{girshick2014rich}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=bd5dadbe57bedc5957c19a3154c4d424}{%
+           family={Girshick},
+           familyi={G\bibinitperiod},
+           given={Ross},
+           giveni={R\bibinitperiod}}}%
+        {{hash=913090a0d65c7a300c602f5a5a5a61e3}{%
+           family={Donahue},
+           familyi={D\bibinitperiod},
+           given={Jeff},
+           giveni={J\bibinitperiod}}}%
+        {{hash=90180e1a30742e0d15328bfe637c2ef4}{%
+           family={Darrell},
+           familyi={D\bibinitperiod},
+           given={Trevor},
+           giveni={T\bibinitperiod}}}%
+        {{hash=c75a5377b6dc5213831576e88ffe553c}{%
+           family={Malik},
+           familyi={M\bibinitperiod},
+           given={Jitendra},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{5aa9f085e8eccf547d1eb54a05cb1beb}
+      \strng{fullhash}{9147daa2f6a058d5b8880ff5cf38abd6}
+      \strng{bibnamehash}{5aa9f085e8eccf547d1eb54a05cb1beb}
+      \strng{authorbibnamehash}{5aa9f085e8eccf547d1eb54a05cb1beb}
+      \strng{authornamehash}{5aa9f085e8eccf547d1eb54a05cb1beb}
+      \strng{authorfullhash}{9147daa2f6a058d5b8880ff5cf38abd6}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the IEEE conference on computer vision and pattern recognition}
+      \field{title}{Rich feature hierarchies for accurate object detection and semantic segmentation}
+      \field{year}{2014}
+      \field{pages}{580\bibrangedash 587}
+      \range{pages}{8}
+    \endentry
+    \entry{DBLP:journals/corr/Girshick15}{article}{}
+      \name{author}{1}{}{%
+        {{hash=c2c60ceb4a241891e128295a5ae80aef}{%
+           family={Girshick},
+           familyi={G\bibinitperiod},
+           given={Ross\bibnamedelima B.},
+           giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{c2c60ceb4a241891e128295a5ae80aef}
+      \strng{fullhash}{c2c60ceb4a241891e128295a5ae80aef}
+      \strng{bibnamehash}{c2c60ceb4a241891e128295a5ae80aef}
+      \strng{authorbibnamehash}{c2c60ceb4a241891e128295a5ae80aef}
+      \strng{authornamehash}{c2c60ceb4a241891e128295a5ae80aef}
+      \strng{authorfullhash}{c2c60ceb4a241891e128295a5ae80aef}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{Fast {R-CNN}}
+      \field{volume}{abs/1504.08083}
+      \field{year}{2015}
+      \verb{eprint}
+      \verb 1504.08083
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1504.08083
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1504.08083
+      \endverb
+    \endentry
+    \entry{he2017mask}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=6b4b60e909e78633945f3f9c9dc83e01}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Kaiming},
+           giveni={K\bibinitperiod}}}%
+        {{hash=6e67eba235a8cccf3a69b746a53d5722}{%
+           family={Gkioxari},
+           familyi={G\bibinitperiod},
+           given={Georgia},
+           giveni={G\bibinitperiod}}}%
+        {{hash=37843fd1a96680e7945ac1a059b6e8b8}{%
+           family={Dollar},
+           familyi={D\bibinitperiod},
+           given={Piotr},
+           giveni={P\bibinitperiod}}}%
+        {{hash=c2c60ceb4a241891e128295a5ae80aef}{%
+           family={Girshick},
+           familyi={G\bibinitperiod},
+           given={Ross\bibnamedelima B.},
+           giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{6edb98fe38401d2fe4a026f5ce6e8451}
+      \strng{fullhash}{c7f52ca59cda56e2a1ac03dddcd27ed1}
+      \strng{bibnamehash}{6edb98fe38401d2fe4a026f5ce6e8451}
+      \strng{authorbibnamehash}{6edb98fe38401d2fe4a026f5ce6e8451}
+      \strng{authornamehash}{6edb98fe38401d2fe4a026f5ce6e8451}
+      \strng{authorfullhash}{c7f52ca59cda56e2a1ac03dddcd27ed1}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the IEEE International Conference on Computer Vision (ICCV)}
+      \field{title}{Mask R-CNN}
+      \field{year}{2017}
+      \field{pages}{2980\bibrangedash 2988}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1109/ICCV.2017.322
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1109/ICCV.2017.322
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1109/ICCV.2017.322
+      \endverb
+    \endentry
+    \entry{noh2015learning}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=b5da9362ffee098ef6b4dc00cfee416f}{%
+           family={Noh},
+           familyi={N\bibinitperiod},
+           given={Hyeonwoo},
+           giveni={H\bibinitperiod}}}%
+        {{hash=55cdae98e2ff30fba85a5ecb99c50f9e}{%
+           family={Hong},
+           familyi={H\bibinitperiod},
+           given={Seunghoon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=3fe1accee0f476532572b35f0cdf240e}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Bohyung},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{fe0a97f540bbfdff07150fe3a24fef5a}
+      \strng{fullhash}{fe0a97f540bbfdff07150fe3a24fef5a}
+      \strng{bibnamehash}{fe0a97f540bbfdff07150fe3a24fef5a}
+      \strng{authorbibnamehash}{fe0a97f540bbfdff07150fe3a24fef5a}
+      \strng{authornamehash}{fe0a97f540bbfdff07150fe3a24fef5a}
+      \strng{authorfullhash}{fe0a97f540bbfdff07150fe3a24fef5a}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the IEEE international conference on computer vision}
+      \field{title}{Learning deconvolution network for semantic segmentation}
+      \field{year}{2015}
+      \field{pages}{1520\bibrangedash 1528}
+      \range{pages}{9}
+    \endentry
+    \entry{paszke2016enet}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=56bf0b340039cf8594436a624ff548a9}{%
+           family={Paszke},
+           familyi={P\bibinitperiod},
+           given={Adam},
+           giveni={A\bibinitperiod}}}%
+        {{hash=8ef51a0906e47d2b4472c4e714ed598f}{%
+           family={Chintala},
+           familyi={C\bibinitperiod},
+           given={Soumith},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b25fc1ce530dd4b76f3f084e4c4feb5e}{%
+           family={Arun},
+           familyi={A\bibinitperiod},
+           given={Nikhil},
+           giveni={N\bibinitperiod}}}%
+        {{hash=94d5998596059c81a8c31c5ee0c64104}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Edward},
+           giveni={E\bibinitperiod}}}%
+        {{hash=1df08528973ddb981b0b28a6bc95bb93}{%
+           family={Ranjan},
+           familyi={R\bibinitperiod},
+           given={Anish},
+           giveni={A\bibinitperiod}}}%
+        {{hash=9be28a06c22a773299635658c7635409}{%
+           family={Capelli},
+           familyi={C\bibinitperiod},
+           given={Francisco},
+           giveni={F\bibinitperiod}}}%
+        {{hash=0a015ba2b7809a8c719e07ad3579645c}{%
+           family={Fischer},
+           familyi={F\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d8cb6e9af12cbd2fda5b9efe0817a11f}{%
+           family={Su},
+           familyi={S\bibinitperiod},
+           given={Ruiliang},
+           giveni={R\bibinitperiod}}}%
+        {{hash=891e34ee095621816852fa64ee2a5982}{%
+           family={McLoughlin},
+           familyi={M\bibinitperiod},
+           given={Neil},
+           giveni={N\bibinitperiod}}}%
+        {{hash=f726991acf94e31096bcb52b9034252d}{%
+           family={Finkel},
+           familyi={F\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{724e74fc18651eb78eb82fbcd1d9dfb1}
+      \strng{fullhash}{ba89adc539bff200d2339c1d12ec6bab}
+      \strng{bibnamehash}{724e74fc18651eb78eb82fbcd1d9dfb1}
+      \strng{authorbibnamehash}{724e74fc18651eb78eb82fbcd1d9dfb1}
+      \strng{authornamehash}{724e74fc18651eb78eb82fbcd1d9dfb1}
+      \strng{authorfullhash}{ba89adc539bff200d2339c1d12ec6bab}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1606.02147}
+      \field{title}{ENet: A Deep Neural Network Architecture for Real-Time Semantic Segmentation}
+      \field{year}{2016}
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1606.02147
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1606.02147
+      \endverb
+    \endentry
+    \entry{redmon2016you}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=0712b65985612db5b055749502dad611}{%
+           family={Redmon},
+           familyi={R\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{0712b65985612db5b055749502dad611}
+      \strng{fullhash}{0712b65985612db5b055749502dad611}
+      \strng{bibnamehash}{0712b65985612db5b055749502dad611}
+      \strng{authorbibnamehash}{0712b65985612db5b055749502dad611}
+      \strng{authornamehash}{0712b65985612db5b055749502dad611}
+      \strng{authorfullhash}{0712b65985612db5b055749502dad611}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the IEEE conference on computer vision and pattern recognition}
+      \field{title}{You only look once: Unified, real-time object detection}
+      \field{year}{2016}
+    \endentry
+    \entry{DBLP:journals/corr/RenHG015}{article}{}
+      \name{author}{4}{}{%
+        {{hash=bb295293acacd54387339079ebbe4ead}{%
+           family={Ren},
+           familyi={R\bibinitperiod},
+           given={Shaoqing},
+           giveni={S\bibinitperiod}}}%
+        {{hash=6b4b60e909e78633945f3f9c9dc83e01}{%
+           family={He},
+           familyi={H\bibinitperiod},
+           given={Kaiming},
+           giveni={K\bibinitperiod}}}%
+        {{hash=c2c60ceb4a241891e128295a5ae80aef}{%
+           family={Girshick},
+           familyi={G\bibinitperiod},
+           given={Ross\bibnamedelima B.},
+           giveni={R\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=f85751488058842b5777c7b4074077b5}{%
+           family={Sun},
+           familyi={S\bibinitperiod},
+           given={Jian},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{f086ca4da3e532e8a41cb758ea461825}
+      \strng{fullhash}{521acdba006724855e6448ea0d6acd04}
+      \strng{bibnamehash}{f086ca4da3e532e8a41cb758ea461825}
+      \strng{authorbibnamehash}{f086ca4da3e532e8a41cb758ea461825}
+      \strng{authornamehash}{f086ca4da3e532e8a41cb758ea461825}
+      \strng{authorfullhash}{521acdba006724855e6448ea0d6acd04}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{CoRR}
+      \field{title}{Faster {R-CNN:} Towards Real-Time Object Detection with Region Proposal Networks}
+      \field{volume}{abs/1506.01497}
+      \field{year}{2015}
+      \verb{eprint}
+      \verb 1506.01497
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1506.01497
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1506.01497
+      \endverb
+    \endentry
+    \entry{ronneberger2015u}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=8e46da9de9e53ea5d37089897d69cdd9}{%
+           family={Ronneberger},
+           familyi={R\bibinitperiod},
+           given={Olaf},
+           giveni={O\bibinitperiod}}}%
+        {{hash=168e84ce3582cbc6bac5e2ebc3ef8442}{%
+           family={Fischer},
+           familyi={F\bibinitperiod},
+           given={Philipp},
+           giveni={P\bibinitperiod}}}%
+        {{hash=b452a32296958371572717940f900884}{%
+           family={Brox},
+           familyi={B\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{f23ccc5160c62c7866172335b2c76e11}
+      \strng{fullhash}{f23ccc5160c62c7866172335b2c76e11}
+      \strng{bibnamehash}{f23ccc5160c62c7866172335b2c76e11}
+      \strng{authorbibnamehash}{f23ccc5160c62c7866172335b2c76e11}
+      \strng{authornamehash}{f23ccc5160c62c7866172335b2c76e11}
+      \strng{authorfullhash}{f23ccc5160c62c7866172335b2c76e11}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI)}
+      \field{title}{U-Net: Convolutional Networks for Biomedical Image Segmentation}
+      \field{year}{2015}
+      \field{pages}{234\bibrangedash 241}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1007/978-3-319-24574-4_28
+      \endverb
+    \endentry
+    \entry{schroff2015facenet}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=c62e96f68033a3d3cd4639e35a2de4da}{%
+           family={Schroff},
+           familyi={S\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=6cbb997a11c6922af719c32863261918}{%
+           family={Kalenichenko},
+           familyi={K\bibinitperiod},
+           given={Dmitry},
+           giveni={D\bibinitperiod}}}%
+        {{hash=1e9a1d678032dfffb4e871a0f622e030}{%
+           family={Philbin},
+           familyi={P\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{474363fec59aa6cdd11f5b6b8275a8f2}
+      \strng{fullhash}{474363fec59aa6cdd11f5b6b8275a8f2}
+      \strng{bibnamehash}{474363fec59aa6cdd11f5b6b8275a8f2}
+      \strng{authorbibnamehash}{474363fec59aa6cdd11f5b6b8275a8f2}
+      \strng{authornamehash}{474363fec59aa6cdd11f5b6b8275a8f2}
+      \strng{authorfullhash}{474363fec59aa6cdd11f5b6b8275a8f2}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}
+      \field{title}{FaceNet: A Unified Embedding for Face Recognition and Clustering}
+      \field{year}{2015}
+      \field{pages}{815\bibrangedash 823}
+      \range{pages}{9}
+    \endentry
+    \entry{sermanet_overfeat_2014}{misc}{}
+      \name{author}{6}{}{%
+        {{hash=15f5333df96deaf51c72d065bded37d8}{%
+           family={Sermanet},
+           familyi={S\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod}}}%
+        {{hash=19ac0399a087af1f10403369b2bf52b0}{%
+           family={Eigen},
+           familyi={E\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=87f628db6da99dc0a2a20f276e51b3ac}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Xiang},
+           giveni={X\bibinitperiod}}}%
+        {{hash=c8e0f85f89c92f05a8a7ee998755b202}{%
+           family={Mathieu},
+           familyi={M\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a6784304d1cc890b2cb6c6c7f2f3fd76}{%
+           family={Fergus},
+           familyi={F\bibinitperiod},
+           given={Rob},
+           giveni={R\bibinitperiod}}}%
+        {{hash=6a1aa6b7eab12b931ca7c7e3f927231d}{%
+           family={LeCun},
+           familyi={L\bibinitperiod},
+           given={Yann},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {arXiv}%
+      }
+      \strng{namehash}{b25e91534b92f8a61f0fb523d489acb2}
+      \strng{fullhash}{7845fffa5f59381298c78dc9a001d424}
+      \strng{bibnamehash}{b25e91534b92f8a61f0fb523d489acb2}
+      \strng{authorbibnamehash}{b25e91534b92f8a61f0fb523d489acb2}
+      \strng{authornamehash}{b25e91534b92f8a61f0fb523d489acb2}
+      \strng{authorfullhash}{7845fffa5f59381298c78dc9a001d424}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{We present an integrated framework for using Convolutional Networks for classification, localization and detection. We show how a multiscale and sliding window approach can be efficiently implemented within a ConvNet. We also introduce a novel deep learning approach to localization by learning to predict object boundaries. Bounding boxes are then accumulated rather than suppressed in order to increase detection confidence. We show that different tasks can be learned simultaneously using a single shared network. This integrated framework is the winner of the localization task of the ImageNet Large Scale Visual Recognition Challenge 2013 (ILSVRC2013) and obtained very competitive results for the detection and classifications tasks. In post-competition work, we establish a new state of the art for the detection task. Finally, we release a feature extractor from our best model called OverFeat.}
+      \field{month}{2}
+      \field{note}{arXiv:1312.6229}
+      \field{shorttitle}{{OverFeat}}
+      \field{title}{{OverFeat}: {Integrated} {Recognition}, {Localization} and {Detection} using {Convolutional} {Networks}}
+      \field{urlday}{27}
+      \field{urlmonth}{11}
+      \field{urlyear}{2024}
+      \field{year}{2014}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.48550/arXiv.1312.6229
+      \endverb
+      \verb{file}
+      \verb Preprint PDF:C\:\\Users\\carlo\\Zotero\\storage\\24IGAFNQ\\Sermanet et al. - 2014 - OverFeat Integrated Recognition, Localization and Detection using Convolutional Networks.pdf:application/pdf;Snapshot:C\:\\Users\\carlo\\Zotero\\storage\\STD58YD5\\1312.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1312.6229
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1312.6229
+      \endverb
+      \keyw{Computer Science - Computer Vision and Pattern Recognition}
+    \endentry
     \entry{VGG-16}{article}{}
       \name{author}{1}{}{%
         {{hash=f49de7efc88ea63db707efe7e1ba6191}{%
