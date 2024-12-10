@@ -2400,6 +2400,28 @@
     <bcf:citekey order="37" intorder="1">gatys2015neural</bcf:citekey>
     <bcf:citekey order="38" intorder="1">gatys2015neural</bcf:citekey>
     <bcf:citekey order="39" intorder="1">gatys2015neural</bcf:citekey>
+    <bcf:citekey order="40" intorder="1">pascanu2013difficulty</bcf:citekey>
+    <bcf:citekey order="41" intorder="1">pascanu2013difficulty</bcf:citekey>
+    <bcf:citekey order="42" intorder="1">pascanu2013difficulty</bcf:citekey>
+    <bcf:citekey order="43" intorder="1">pascanu2013difficulty</bcf:citekey>
+    <bcf:citekey order="44" intorder="1">hochreiter1997long</bcf:citekey>
+    <bcf:citekey order="45" intorder="1">hochreiter1997long</bcf:citekey>
+    <bcf:citekey order="46" intorder="1">hochreiter1997long</bcf:citekey>
+    <bcf:citekey order="47" intorder="1">cho2014learning</bcf:citekey>
+    <bcf:citekey order="48" intorder="1">cho2014learning</bcf:citekey>
+    <bcf:citekey order="49" intorder="1">bahdanau2014neural</bcf:citekey>
+    <bcf:citekey order="50" intorder="1">bahdanau2014neural</bcf:citekey>
+    <bcf:citekey order="51" intorder="1">antol2015vqa</bcf:citekey>
+    <bcf:citekey order="52" intorder="1">antol2015vqa</bcf:citekey>
+    <bcf:citekey order="53" intorder="1">vqa</bcf:citekey>
+    <bcf:citekey order="54" intorder="1">antol2015vqa</bcf:citekey>
+    <bcf:citekey order="55" intorder="1">zhu2016visual7w</bcf:citekey>
+    <bcf:citekey order="56" intorder="1">zhu2016visual7w</bcf:citekey>
+    <bcf:citekey order="57" intorder="1">zhu2016visual7w</bcf:citekey>
+    <bcf:citekey order="58" intorder="1">zhu2016visual7w</bcf:citekey>
+    <bcf:citekey order="59" intorder="1">vaswani2017attention</bcf:citekey>
+    <bcf:citekey order="60" intorder="1">vaswani2017attention</bcf:citekey>
+    <bcf:citekey order="61" intorder="1">vaswani2017attention</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
