@@ -288,15 +288,15 @@ An LSTM is able to recognize an important input (input gate) and store it (in th
     &\mathbf{i}_{(t)} = \sigma\big(
         \mathbf{W}_{xi}^T \mathbf{x}_{(t)}+
         \mathbf{W}_{hi}^T \mathbf{h}_{(t-1)} + \mathbf{b}_i    
-    \big) \qquad \textsf{(input gate controller)}\\
+    \big) \qquad \textsf{(\textbf{input gate} controller)}\\
     &\mathbf{f}_{(t)} = \sigma\big(
         \mathbf{W}_{xf}^T \mathbf{x}_{(t)}+
         \mathbf{W}_{hf}^T \mathbf{h}_{(t-1)} + \mathbf{b}_f    
-    \big) \qquad \textsf{(forget gate controller)} \\
+    \big) \qquad \textsf{(\textbf{forget gate} controller)} \\
     &\mathbf{o}_{(t)} = \sigma\big(
         \mathbf{W}_{xo}^T \mathbf{x}_{(t)}+
         \mathbf{W}_{ho}^T \mathbf{h}_{(t-1)} + \mathbf{b}_o    
-    \big) \qquad \textsf{(output gate controller)}\\
+    \big) \qquad \textsf{(\textbf{output gate} controller)}\\
     &\mathbf{g}_{(t)} = \tanh\big(
         \mathbf{W}_{xg}^T \mathbf{x}_{(t)}+
         \mathbf{W}_{hg}^T \mathbf{h}_{(t-1)} + \mathbf{b}_g    
@@ -546,12 +546,21 @@ When we want to improve the attention mechanism in Transformers, \textbf{Multi-h
     \label{fig:transformer_arch}
 \end{figure}
 
+\begin{multicols}{2}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.7]{img/multi_head.png}
+        \caption{Architecture of the \textit{Multi-Head layer}}
+    \end{figure}
 
-\begin{figure}
-    \centering
-    \includegraphics[scale=0.7]{img/multi_head.png}
-    \caption{Architecture of the \textit{Multi-Head layer}}
-\end{figure}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[scale=0.5]{img/scaledDotProduct.png}
+        \caption{Scaled-dot product attention}
+    \end{figure}
+\end{multicols}
+
+
 
 \section{Transformers vs RNN}
 In order to conclude this chapter we provide a comparison between Transformers and RNN in term of mechanisms, performance and so on. 
