@@ -452,6 +452,77 @@
       \field{title}{Long Short-term Memory}
       \field{year}{1997}
     \endentry
+    \entry{ledig2017photo}{inproceedings}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=dee0b959a6d8e56154a0c6381ea357af}{%
+           family={Ledig},
+           familyi={L\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=5314c7da92c0dd8f017ad76fc7a24e02}{%
+           family={Theis},
+           familyi={T\bibinitperiod},
+           given={Lucas},
+           giveni={L\bibinitperiod}}}%
+        {{hash=06edff712db50810cceb7f6ad2d53ecf}{%
+           family={Huszár},
+           familyi={H\bibinitperiod},
+           given={Ferenc},
+           giveni={F\bibinitperiod}}}%
+        {{hash=3b9836d6278f3cf5dc21ab6e8c010ecb}{%
+           family={Caballero},
+           familyi={C\bibinitperiod},
+           given={Jose},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c1b16923730dc02c52fbcfe531bad999}{%
+           family={Cunningham},
+           familyi={C\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+        {{hash=054b92db4c82434176e894d7fa6055ce}{%
+           family={Acosta},
+           familyi={A\bibinitperiod},
+           given={Alejandro},
+           giveni={A\bibinitperiod}}}%
+        {{hash=b9d6efcdb8c05d59bf4b6c18cba1518c}{%
+           family={Aitken},
+           familyi={A\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3feeeebee8583ecc208f7fb3e0a55068}{%
+           family={Tejani},
+           familyi={T\bibinitperiod},
+           given={Alykhan},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1381c64db5234527e34e6f3b4977fe54}{%
+           family={Totz},
+           familyi={T\bibinitperiod},
+           given={Johannes},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f9c196f615b0bde00b8ef1e7cfaa8055}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Zehan},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{d9ed1315cb65e9f234737cc328a74451}
+      \strng{fullhash}{0cb88df96ea34b1bf888b2586d065792}
+      \strng{bibnamehash}{d9ed1315cb65e9f234737cc328a74451}
+      \strng{authorbibnamehash}{d9ed1315cb65e9f234737cc328a74451}
+      \strng{authornamehash}{d9ed1315cb65e9f234737cc328a74451}
+      \strng{authorfullhash}{0cb88df96ea34b1bf888b2586d065792}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the IEEE conference on computer vision and pattern recognition}
+      \field{title}{Photo-realistic single image super-resolution using a generative adversarial network}
+      \field{year}{2017}
+      \field{pages}{4681\bibrangedash 4690}
+      \range{pages}{10}
+    \endentry
     \entry{noh2015learning}{inproceedings}{}
       \name{author}{3}{}{%
         {{hash=b5da9362ffee098ef6b4dc00cfee416f}{%
@@ -818,6 +889,49 @@
       \field{journaltitle}{Advances in Neural Information Processing Systems}
       \field{title}{Attention is all you need}
       \field{year}{2017}
+    \endentry
+    \entry{wu2016learning}{article}{}
+      \name{author}{5}{}{%
+        {{hash=3a7d08fff1af967fe4513ac63790e97d}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Jiajun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=89ece7512ff2aa3260981924c38151c7}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Chengkai},
+           giveni={C\bibinitperiod}}}%
+        {{hash=dcc9916c36daf6b4d708323fea582d1d}{%
+           family={Xue},
+           familyi={X\bibinitperiod},
+           given={Tianfan},
+           giveni={T\bibinitperiod}}}%
+        {{hash=e4f8d7d3cadd9f21480a5e576926a755}{%
+           family={Freeman},
+           familyi={F\bibinitperiod},
+           given={Bill},
+           giveni={B\bibinitperiod}}}%
+        {{hash=48de56ec34034a2f537d9cc56f0774d2}{%
+           family={Tenenbaum},
+           familyi={T\bibinitperiod},
+           given={Josh},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{d68ca7b1d5cb4921c0a2aa9237be88bd}
+      \strng{fullhash}{b6cc3599c4f2da22902044513f021a1b}
+      \strng{bibnamehash}{d68ca7b1d5cb4921c0a2aa9237be88bd}
+      \strng{authorbibnamehash}{d68ca7b1d5cb4921c0a2aa9237be88bd}
+      \strng{authornamehash}{d68ca7b1d5cb4921c0a2aa9237be88bd}
+      \strng{authorfullhash}{b6cc3599c4f2da22902044513f021a1b}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Advances in neural information processing systems}
+      \field{title}{Learning a probabilistic latent space of object shapes via 3d generative-adversarial modeling}
+      \field{volume}{29}
+      \field{year}{2016}
     \endentry
     \entry{zhu2016visual7w}{inproceedings}{}
       \name{author}{4}{}{%

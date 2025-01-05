@@ -159,5 +159,193 @@ We have understood that training a GAN is not so simple, since the two networks 
 The deep-learning model we have seen before introducing GANs involved a single player that has been trying to maximize its reward, we used Stochastic Gradient Descent that guaranteed convergence under certain conditions. In the case of GANs there is a player which is trying to minimize the reward of the other. There is no collaboration, moreover the gradient based method are not converging to the Nash Equilibrium.
 
 \subsubsection{Mode collapse}
+We refer to \textbf{mode collapsing} to indicate a failure where the generator model in the GAN produces only a \textit{limited variety of output} neglecting the diversity which is present in the dataset with real samples, and then in the data distribution. This can lead the generator to produce  \textit{few modes} or a \textit{single one}. Why does this phenomenon occur? It is mainly related to the \textit{adversarial dynamics} underlying the GAN formulation and the minimax game: if the generator (G) finds that the discriminator (D) is fooled when producing examples of a certain mode, then the generation goes toward the direction of producing images of that modes which, anyway maximize the classification error of D. We show an example of this fact: 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.6]{img/mode.png}
+    \caption{Mode collapse phenomenon}
+\end{figure}
+
+Just for mention them, three metrics to measure mode collapsing are: \textit{Inception Score}, \textit{Frechet Inception distance} and the more trivial but intuitive one is the \textit{Visual Inspection}.
+Possible approaches to mitigate this issue are: 
+\begin{itemize}
+    \itemsep-0.3em
+    \item Using a multiclass classification instead of a binary one (real/fake), it was empirically proven that it generates better samples there is not a formal proof; 
+    \item Use \textit{different loss functions} for example MSE(L2), Energy-based losse, Wasserstein Loss...
+\end{itemize}
 
 \section{From GAN to DCGAN}
+The original Goodfellow paper used fully connected model for the generator and the discriminator, however this is not a good solution for images in which the features to consider are more and more. An intuitive idea is that we can substitute fully connected models with CNN which performs very much better with respect to simple FCN which could lead too \textbf{many parameters}.  While for the discriminator a classical CNN is used, for the generator a decoder model which uses \textit{deconvolutions} and \textit{linear interpolation} is used. In the figure is showed a sketch for the generator architecture that from a noise vector in the latent space of 100 elements produces in output a generated  image $64\times64$.
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.6]{img/DCGAN_generator.png}
+    \caption{Example for DCGAN generator architecture}
+\end{figure}
+
+\section{Improving GAN}
+Till now we have considered only unconditional generation, in which the generator starting from the noise vector $z$ does not have control over the generated data without any additional information.
+However, there are cases in which one is interested into: (i) generate an example of a specific class within the ones present in the dataset, in this case we talk about \textbf{conditional generation}; (ii) given a generated example, have the possibility to modify some features looking for a way to manipulate/interpolate the latent space, in this case we are talking about \textbf{controllable generation}.
+
+\subsection{Conditional GAN}
+In this case both the architectures for \textit{Generator (G)} and \textit{Discriminator (D)} are slightly modified. The resulting model is called \textit{cGAN} (Conditional GAN). In particular, an extra information encoding either the class to generate (for G) or the class of which control the reality (for D), must be taken into account. Mostly, this information is passed to the GAN by using a \textit{one-hot encoding} like the one used in recurrent models. For example, if we have three classes and we want to generate/discriminate a sample for the first class the one-hot encoding is [1,0,0].
+
+\subsubsection{Conditional Generator}
+The generator takes as input the noise vector $z$ and the one-hot encoded label $y$ for the class to generate. 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.8]{img/condGen.png}
+    \caption{Generator in cGAN}
+\end{figure}
+
+\subsubsection{Conditional Discriminator}
+In the cGAN arcitecture the discriminator given the generated sample (or the real sample) outputs a probability for that image to be real or fake.
+
+The overall architecture is shown in the following:
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.8]{img/cGAN.png}
+    \caption{Complete cGAN architecture}
+\end{figure}
+
+\subsection{Controllable GAN}
+We talk about \textbf{controllable generation} when we would like to change, in some way, given a generated image some features by acting on the latent space of the provided noise vector. Just for give an example, if the generator can generate faces, we want a way to change the age, the gender, the pose\dots \textbf{How to do this?} Now we are going to mention two methods for controllable generation whose common denominator is the effort in finding a way to associate dimensions of the latent space with generated examples.
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.7]{img/contGAN.png}
+    \caption{Example of controlled generated examples}
+\end{figure}
+
+\subsubsection{Interpolation in the $z$-space}
+Here we consider for simplicity a 2D latent space. You start from two different noise vector (taken from a certain latent distribution eg. Gaussian, Normal...) and fed them into the generator we obtain two images $G(z_1)$ and $G(z_2)$ where $z_1$ and $z_2$ are the input noise vectors. In the bidimensional latent space this individuate a point. If we interpolate such points in the simplest way, by joining them with a segment we can obtain intermediate images between $G(z_1)$ and $G(z_2)$, by observing them we can obtain an intermediate generated image. Mathematically speaking the intermediate point is obtained as
+\begin{equation*}
+    z_{interp}=\alpha z_1 + (1-\alpha) z_2 \quad \alpha \in [0,1]
+\end{equation*}
+where $\alpha$ is an hyperparameter to control the position between the two points.
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.8]{img/interpz.png}
+    \caption{Interpolation of the latent space}
+\end{figure}
+
+\subsubsection{Latent Direction for Feature control}
+An even more interesting approach for control the generation is given the latent space (which is in general \textit{hyperdimensional}) look for \textbf{directions} along which you can move to change the particular feature it is associated to. For example, in the case I had a dog images generator, I would like to have the possibility to understand that moving across a certain directioni I can change the fur color for that generated dog. For example if you add a certain direction $v$ to the noise vector $z$ and the image $G(z)$ is added with a smile, this means that along such a direction you can \textit{control} the feature related to the smile. In formulae:
+\begin{equation*}
+    z_{mod}=z+\alpha v_{att}
+\end{equation*}
+where $v_{att}$ is the direction along which you control the attribute $att$ and $\alpha$ is to control the strength of that attribute.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.6]{img/directCont.png}
+\end{figure}
+
+The ideas we have just presented seem to be trivial, however there are some issues to manage.
+
+\subsubsection{Output feature correlation}
+The features of the output examples are sometimes strongly correlated so that if you act on a feature you also act on another correlated feature. Suppose you have an image $G(z)$ of a woman face, you want to add beard. It is very likely that modifying the direction of the beard will result in changing also the gender of the generated face, since usually (in the samples used for training the GAN) the woman have no beard. Then, it is quite difficult to \textbf{isoltate effects on the output}.
+
+\subsubsection{Z-space entanglement}
+It is likely that, given the input noise vector to a certain subset of elements are associated multiple features, since in general the number of features is much higher with respect to the dimension of the latent space. This problem is present even if all of the features of a certain image are all uncorrelated, here the cause of the problem stays in the latent space structure. This is the same to say that the $z$-space is \textbf{entangled}. How to solve this problem? One of the dummiest approaches the \textit{Supervised latent manipulation} in which more annotation to the images are added, but it is not convenient. Sometimes we struggle in obtaining the "basic" class labels! Here the solution is to increase the dimension of the latent space and add a \textit{regularizer} (supervised or unsupervised) to penalize the entanglement, obtaining a novel loss function made up as:
+\begin{equation*}
+    \mathcal{L}_{new}=\mathcal{L}_{adversarial} + \lambda \cdot \mathcal{L}_{regularizer}
+\end{equation*}
+a possible way is to maximize the \textbf{mutual information} (that is the statistical dependence between variables) so that could be a relation between the variables $z_i$ and the generated $G(z_i)$.\\
+
+So far we have seen different ways to modify the "basic" GAN architecture in order to \textbf{condition the generated output} (by using additional information), to \textbf{control the generated output features} by structurally acting on the latent space. The remaining part of this chapter is devoted to present possible applications of GANs giving some examples of the most popular models for image-to-image translation, image super-resolution and tridimensional generation.
+
+
+
+
+\section{Applications of GAN: Image-to-Image translation}
+\textbf{Image-to-image translation} is one possible application for Generative Adversarial models, we have discussed so far, that deals with transferring the \textit{style} from one image to another keeping unchanged its \textit{content}. This is the underlying idea \textbf{image colorization} and \textbf{sketch to photo}. The methods for image-to-image (i2i) translation are split mainly in two groups:
+\begin{enumerate}
+    \itemsep-0.2em
+    \item \textsf{Paired}: in this case each image in a domain has  the corresponding target image in the other domain; 
+    \item \textsf{Unpaired}: such models two sets of unpaired data, the challenge is to find a way to transfer to a domain the main features of the other and viceversa.
+\end{enumerate}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.5]{img/pairedunpaired.png}
+    \caption{Paired and Unpaired sets of images}
+\end{figure}
+
+\subsection{Pix2Pix architecture (Paired domains)}
+This is a popular model for i2i, and is a type of conditional generation. In particular \textbf{Pix2Pix} involve two different domains: Sketches and Photos. The aim of the model is to translate the sketches into a photorealistic example. On the other hand, the discriminator takes as input the real input (sketch) concatened either with the generated output or the ground truth (the corresponding paired image). Note that here instead of the usual noise vector $z$ we have an image, however you can include also a noise vector in order to control the output features.
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.6]{img/pix2pix_arch.png}
+    \caption{Pix2Pix architecture}
+\end{figure}
+What about the architecture of such a model? The \textbf{Generator} is a U-Net autoencoder, this first compress the image in a feature vector and then expands it to a generated image. On the other hand in order to improve the training of the GAN, a  \textbf{PatchGAN} is used for the discriminator, this instead of classifying the entire  image as real or fake, takes several patches of the input image and outputs a grid of probability for the patches to be associated with a real or a fake example.By doing this the learning process can be focused into iteratively improving particular regions of the images to be generated in order to win the minimax (on a certain extent) game. The Loss is composed by the \textit{adversarial loss} plus a regularization term
+
+\begin{equation*}
+    \mathcal{L}_{Pix2Pix} = 
+    \mathcal{L}_{adversarial} + \lambda \mathcal{L}_{pixel}
+\end{equation*}
+where the term related to regularization is
+\begin{equation*}
+    \mathcal{L}_{pixel} = \sum_{i=1}^n \vert \text{generated}-\text{real} \vert
+\end{equation*}
+
+\subsection{Cycle GAN (Unpaired domains)}
+\textbf{CycleGAN} is also a popular model for i2i \underline{unpaired} image translation, this architecture aims at finding a mapping between two sets of images (with different styles). For example, you want to turn a zebra into an horse and viceversa, tranpose an image of a season into another... Again, \textbf{How to do this?}
+
+Suppose we have two different domains: Zebras and Horses. Since I start from completely separated domains, if from a source I apply the transformation $G$ we are obtaining a target (\textit{cycle}), if starting from the target I apply $F$, ideally the so generated image (ideally) must be the same with respect to the source (\textit{cycle consistency}).
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.7]{img/cyclecons.png}
+    \caption{Example of cycle consistency: starting from the zebras domain, we obtain an horse. The cycle consistency is satisfied if coming back I obtain the same zebra}.
+\end{figure}
+
+\noindent
+Summarizing the cycle must guarantee the following, given the source $x$: 
+
+\begin{equation*}
+    x \to G(x) \to F(G(x)) \approx x 
+\end{equation*}
+
+In order to implement \textit{CycleGAN} we have to use two different GANs: one that transforms images from \textit{domain A} to \textit{domain B}, the other converting the images from \textit{domain B} to \textit{domain A}. The architecture of such GANs are identical to the one we have seen in the case of Pix2Pix. In CycleGAN we have that: (i) cicle consistency preserve the contents of a certain image; (ii) the discriminator loss guarantees the style transfer among different domains. How you can imagine, there will be a term in the loss function (common for the two GANs) which takes into account the cycle consistency, here such term is based on \textbf{pixel differences} in both loop directions. Here the adversarial loss is least-squares based (this help with vanishing gradient and mode collapse issues): 
+\begin{equation*}
+    \begin{cases}
+        \mathbb{E}_x[(D(x)-1)^2]+\mathbb{E}_z[(D(G(z))-0)^2]&\textsf{Discriminator}\\
+        \mathbb{E}_z[D(G(z)-1)^2]&\textsf{Generator}
+    \end{cases}
+\end{equation*}
+\noindent
+There is an (optional) extra loss term to help color preservation in the output, in order to guarantee this we can observe that a sample from domain A processed by the OPPOSITE (\textit{domain B}$\to$\textit{domain A}) must remain the same. This term is called \textbf{identity loss} and is the same as in pixel loss, the difference between the input and the real output. The resulting \textit{CycleGAN loss} is the following:
+\begin{equation}
+    \mathcal{L}_{cycleGAN}=\mathcal{L}_{adversarial}+\lambda_1{\mathcal{L}_{cycle_consistency}}+\lambda_2{\mathcal{L}_{identity}}
+\end{equation}
+All the terms must be duplicated to consider both GANs together, the training of such models occurs jointly: the two GANs are trained jointly. Another remark is to use CycleGANs when they can solve your problem (style transfer between images without changing the content). If you want translate a cat into a dog, do not use CycleGAN, since this involves \textit{geometric transformation}.
+
+\section{Applications of GAN: Images Super-resolution}
+Here the objective is to add some information to some image by creating new pixel contents. The most popular model for image Super-Resolution (SR) is \textbf{SRResNet}. They are DCGAN like architecture. During the training fase some high resolution (HR) images are downsampled to obtain a low-resolution (LR) one. Such an LR is fed to a \textit{generator} which creates a super-resolution (SR) of LR. In this case the \textit{discriminator} evaluates if we were able to add the lost information in domwnsampling the HR image.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[scale=0.8]{img/SRResNet.png}
+    \caption{Image Super-Resolution architecture}
+\end{figure}
+
+The \textit{discriminator loss} is a standard BCE (Binary Cross Entropy) loss, while the \textit{generator loss} is the sum of the standard adversarial log-loss and a \textsf{content loss} which aims at minimizing the perceptual loss \textbf{between HR and SR}, is used VGG-19 as feature extractor, an Mean Squared Error loss is used between the features of the last layer of extracted from VGG and the first features of the generator before being upsampled to the super-resolution image. See the conference paper \textit{\citetitle{ledig2017photo}} by \citeauthor{ledig2017photo}, \cite{ledig2017photo} fur further details.
+
+\section{Applications of GAN: 3D GAN}
+What if instead of 2D images we want to generate 3D objects? The approach remains the same: a generator creates 3D shapes a discriminator tells real from fake 3D models. How it is shown in \Citeauthor{wu2016learning}, \cite{wu2016learning}, the generated object lies in a \textit{voxel\footnote{
+    The voxel is the counterpart of the pixel for 3D objects.
+} space}. How you can imagine there is high unbalance between the generator and the discriminator: is much simpler to understand whether an object is real or fake; on the other hand the generator must create from a noise vector a tridimensional shape! For these reasons, there are some training tricks, you can adopt when training a model like this:
+\begin{enumerate}
+    \itemsep-0.3em
+    \item Learning rate for D is much smaller than the one in G; 
+    \item Batch size is very large;
+    \item Discriminator weights are updated only if the accuracy in the last batch is less than 80\%.
+\end{enumerate}
+There are some techiniques which uses a VAE (Variational  Autoencoders) in conjuction with 3D-GAN since this ensure that similar latent vector originates similar 3D outputs, making the generation process \textit{more interpretable} and \textit{predictable}.
