@@ -2427,6 +2427,29 @@
     <bcf:citekey order="64" intorder="1">ledig2017photo</bcf:citekey>
     <bcf:citekey order="65" intorder="1">wu2016learning</bcf:citekey>
     <bcf:citekey order="66" intorder="1">wu2016learning</bcf:citekey>
+    <bcf:citekey order="67" intorder="1">dense</bcf:citekey>
+    <bcf:citekey order="68" intorder="1">wang2013action</bcf:citekey>
+    <bcf:citekey order="69" intorder="1">dense</bcf:citekey>
+    <bcf:citekey order="70" intorder="1">karpathy2014large</bcf:citekey>
+    <bcf:citekey order="71" intorder="1">donahue2015long</bcf:citekey>
+    <bcf:citekey order="72" intorder="1">donahue2015long</bcf:citekey>
+    <bcf:citekey order="73" intorder="1">c3d</bcf:citekey>
+    <bcf:citekey order="74" intorder="1">c3d</bcf:citekey>
+    <bcf:citekey order="75" intorder="1">montes2016temporal</bcf:citekey>
+    <bcf:citekey order="76" intorder="1">montes2016temporal</bcf:citekey>
+    <bcf:citekey order="77" intorder="1">simonyan2014two</bcf:citekey>
+    <bcf:citekey order="78" intorder="1">simonyan2014two</bcf:citekey>
+    <bcf:citekey order="79" intorder="1">simonyan2014two</bcf:citekey>
+    <bcf:citekey order="80" intorder="1">carreira2017quo</bcf:citekey>
+    <bcf:citekey order="81" intorder="1">wang2016temporal</bcf:citekey>
+    <bcf:citekey order="82" intorder="1">wang2016temporal</bcf:citekey>
+    <bcf:citekey order="83" intorder="1">Toshev_2014</bcf:citekey>
+    <bcf:citekey order="84" intorder="1">Toshev_2014</bcf:citekey>
+    <bcf:citekey order="85" intorder="1">Toshev_2014</bcf:citekey>
+    <bcf:citekey order="86" intorder="1">ConvNetPose</bcf:citekey>
+    <bcf:citekey order="87" intorder="1">ConvNetPose</bcf:citekey>
+    <bcf:citekey order="88" intorder="1">ConvNetPose</bcf:citekey>
+    <bcf:citekey order="89" intorder="1">ConvNetPose</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

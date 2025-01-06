@@ -254,6 +254,35 @@
       \field{title}{Neural machine translation by jointly learning to align and translate}
       \field{year}{2014}
     \endentry
+    \entry{carreira2017quo}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=9769c01477fd6a34e0f7732729ee8eb4}{%
+           family={Carreira},
+           familyi={C\bibinitperiod},
+           given={Joao},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c72fc39e94030f67717052309266a44d}{%
+           family={Zisserman},
+           familyi={Z\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{0a316e5d1f3099cd82a261807f608aa0}
+      \strng{fullhash}{0a316e5d1f3099cd82a261807f608aa0}
+      \strng{bibnamehash}{0a316e5d1f3099cd82a261807f608aa0}
+      \strng{authorbibnamehash}{0a316e5d1f3099cd82a261807f608aa0}
+      \strng{authornamehash}{0a316e5d1f3099cd82a261807f608aa0}
+      \strng{authorfullhash}{0a316e5d1f3099cd82a261807f608aa0}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{proceedings of the IEEE Conference on Computer Vision and Pattern Recognition}
+      \field{title}{Quo vadis, action recognition? a new model and the kinetics dataset}
+      \field{year}{2017}
+      \field{pages}{6299\bibrangedash 6308}
+      \range{pages}{10}
+    \endentry
     \entry{cho2014learning}{article}{}
       \name{author}{1}{}{%
         {{hash=3da7501a79d9346572c7fd6e41b615df}{%
@@ -275,6 +304,60 @@
       \field{journaltitle}{arXiv preprint arXiv:1406.1078}
       \field{title}{Learning phrase representations using RNN encoder-decoder for statistical machine translation}
       \field{year}{2014}
+    \endentry
+    \entry{donahue2015long}{inproceedings}{}
+      \name{author}{7}{}{%
+        {{hash=0cca62f586f98049e35080f01c42db36}{%
+           family={Donahue},
+           familyi={D\bibinitperiod},
+           given={Jeffrey},
+           giveni={J\bibinitperiod}}}%
+        {{hash=0ed9d7369339ea281673c02ece7393e7}{%
+           family={Anne\bibnamedelima Hendricks},
+           familyi={A\bibinitperiod\bibinitdelim H\bibinitperiod},
+           given={Lisa},
+           giveni={L\bibinitperiod}}}%
+        {{hash=b7cd28a25c761aa64034ab0997a2b6ec}{%
+           family={Guadarrama},
+           familyi={G\bibinitperiod},
+           given={Sergio},
+           giveni={S\bibinitperiod}}}%
+        {{hash=952fe79c8cb105a95b1fa61c4c9d3443}{%
+           family={Rohrbach},
+           familyi={R\bibinitperiod},
+           given={Marcus},
+           giveni={M\bibinitperiod}}}%
+        {{hash=9382331d707ba963cf9f239bb1387441}{%
+           family={Venugopalan},
+           familyi={V\bibinitperiod},
+           given={Subhashini},
+           giveni={S\bibinitperiod}}}%
+        {{hash=df6dd5c482f41a42e672eecaa779020c}{%
+           family={Saenko},
+           familyi={S\bibinitperiod},
+           given={Kate},
+           giveni={K\bibinitperiod}}}%
+        {{hash=90180e1a30742e0d15328bfe637c2ef4}{%
+           family={Darrell},
+           familyi={D\bibinitperiod},
+           given={Trevor},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{bd390470a0554331449ea38c9028908d}
+      \strng{fullhash}{76613017710b0a0cb261ae43083e14e7}
+      \strng{bibnamehash}{bd390470a0554331449ea38c9028908d}
+      \strng{authorbibnamehash}{bd390470a0554331449ea38c9028908d}
+      \strng{authornamehash}{bd390470a0554331449ea38c9028908d}
+      \strng{authorfullhash}{76613017710b0a0cb261ae43083e14e7}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the IEEE conference on computer vision and pattern recognition}
+      \field{title}{Long-term recurrent convolutional networks for visual recognition and description}
+      \field{year}{2015}
+      \field{pages}{2625\bibrangedash 2634}
+      \range{pages}{10}
     \endentry
     \entry{gatys2015neural}{inproceedings}{}
       \name{author}{3}{}{%
@@ -452,6 +535,55 @@
       \field{title}{Long Short-term Memory}
       \field{year}{1997}
     \endentry
+    \entry{karpathy2014large}{inproceedings}{}
+      \name{author}{6}{}{%
+        {{hash=e91a4c2044bccdbef249eabc886ff988}{%
+           family={Karpathy},
+           familyi={K\bibinitperiod},
+           given={Andrej},
+           giveni={A\bibinitperiod}}}%
+        {{hash=61782a3924be97d5dc42427bfd963c92}{%
+           family={Toderici},
+           familyi={T\bibinitperiod},
+           given={George},
+           giveni={G\bibinitperiod}}}%
+        {{hash=80447d80622f52e6a11d35ede2ff3160}{%
+           family={Shetty},
+           familyi={S\bibinitperiod},
+           given={Sanketh},
+           giveni={S\bibinitperiod}}}%
+        {{hash=909cc514625b20b174a78f5dcd8e558a}{%
+           family={Leung},
+           familyi={L\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=4df216303596d3f13ec1677ee7718dca}{%
+           family={Sukthankar},
+           familyi={S\bibinitperiod},
+           given={Rahul},
+           giveni={R\bibinitperiod}}}%
+        {{hash=cd00ce5bc45f687c432e52e0fa1a7aa6}{%
+           family={Fei-Fei},
+           familyi={F\bibinithyphendelim F\bibinitperiod},
+           given={Li},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{66b96c710eb5c440c8d6cd3c52cb0528}
+      \strng{fullhash}{9a16f277a516dbef5f366670cef2658e}
+      \strng{bibnamehash}{66b96c710eb5c440c8d6cd3c52cb0528}
+      \strng{authorbibnamehash}{66b96c710eb5c440c8d6cd3c52cb0528}
+      \strng{authornamehash}{66b96c710eb5c440c8d6cd3c52cb0528}
+      \strng{authorfullhash}{9a16f277a516dbef5f366670cef2658e}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the IEEE conference on Computer Vision and Pattern Recognition}
+      \field{title}{Large-scale video classification with convolutional neural networks}
+      \field{year}{2014}
+      \field{pages}{1725\bibrangedash 1732}
+      \range{pages}{8}
+    \endentry
     \entry{ledig2017photo}{inproceedings}{}
       \true{moreauthor}
       \true{morelabelname}
@@ -522,6 +654,43 @@
       \field{year}{2017}
       \field{pages}{4681\bibrangedash 4690}
       \range{pages}{10}
+    \endentry
+    \entry{montes2016temporal}{article}{}
+      \name{author}{4}{}{%
+        {{hash=57cdc4da962bab3b811ceef1f09422d3}{%
+           family={Montes},
+           familyi={M\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod}}}%
+        {{hash=bd962a0999f17849b71f420fa015433f}{%
+           family={Salvador},
+           familyi={S\bibinitperiod},
+           given={Amaia},
+           giveni={A\bibinitperiod}}}%
+        {{hash=cb520ee80b8822ef8ff915a863a7db3c}{%
+           family={Pascual},
+           familyi={P\bibinitperiod},
+           given={Santiago},
+           giveni={S\bibinitperiod}}}%
+        {{hash=2559933ad1f2896a99fc670fdd34b26e}{%
+           family={Giro-i-Nieto},
+           familyi={G\bibinithyphendelim i\bibinithyphendelim N\bibinitperiod},
+           given={Xavier},
+           giveni={X\bibinitperiod}}}%
+      }
+      \strng{namehash}{c0165097f54af15763e1c8d021b05cbd}
+      \strng{fullhash}{e71b98e3f4695074c55230a6233af65c}
+      \strng{bibnamehash}{c0165097f54af15763e1c8d021b05cbd}
+      \strng{authorbibnamehash}{c0165097f54af15763e1c8d021b05cbd}
+      \strng{authornamehash}{c0165097f54af15763e1c8d021b05cbd}
+      \strng{authorfullhash}{e71b98e3f4695074c55230a6233af65c}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1608.08128}
+      \field{title}{Temporal activity detection in untrimmed videos with recurrent neural networks}
+      \field{year}{2016}
     \endentry
     \entry{noh2015learning}{inproceedings}{}
       \name{author}{3}{}{%
@@ -868,6 +1037,164 @@
       \endverb
       \keyw{Computer Science - Computer Vision and Pattern Recognition}
     \endentry
+    \entry{simonyan2014two}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=9d16b7284df92c9adaee86c37ab992df}{%
+           family={Simonyan},
+           familyi={S\bibinitperiod},
+           given={Karen},
+           giveni={K\bibinitperiod}}}%
+        {{hash=c72fc39e94030f67717052309266a44d}{%
+           family={Zisserman},
+           familyi={Z\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{25d2f3c4577a6632d37f0126cc781232}
+      \strng{fullhash}{25d2f3c4577a6632d37f0126cc781232}
+      \strng{bibnamehash}{25d2f3c4577a6632d37f0126cc781232}
+      \strng{authorbibnamehash}{25d2f3c4577a6632d37f0126cc781232}
+      \strng{authornamehash}{25d2f3c4577a6632d37f0126cc781232}
+      \strng{authorfullhash}{25d2f3c4577a6632d37f0126cc781232}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Advances in Neural Information Processing Systems (NeurIPS)}
+      \field{title}{Two-stream convolutional networks for action recognition in videos}
+      \field{year}{2014}
+      \field{pages}{568\bibrangedash 576}
+      \range{pages}{9}
+    \endentry
+    \entry{ConvNetPose}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=1c2f6883697f94d0cef71dd45e305cc6}{%
+           family={Tompson},
+           familyi={T\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=203b6f7638d19ea2a865e5e7d0faf82d}{%
+           family={Goroshin},
+           familyi={G\bibinitperiod},
+           given={Ross},
+           giveni={R\bibinitperiod}}}%
+        {{hash=2a2e532f1a06f63c26b28ffb1bcfbd78}{%
+           family={Jain},
+           familyi={J\bibinitperiod},
+           given={Arjun},
+           giveni={A\bibinitperiod}}}%
+        {{hash=6a1aa6b7eab12b931ca7c7e3f927231d}{%
+           family={LeCun},
+           familyi={L\bibinitperiod},
+           given={Yann},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=e787d6c87eccab283b4d12d9e3b42e16}{%
+           family={Bregler},
+           familyi={B\bibinitperiod},
+           given={Christoph},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{90314b763729b1d5f7e2617b703e66ee}
+      \strng{fullhash}{3dbb761df29e314e670b762cd74d2595}
+      \strng{bibnamehash}{90314b763729b1d5f7e2617b703e66ee}
+      \strng{authorbibnamehash}{90314b763729b1d5f7e2617b703e66ee}
+      \strng{authornamehash}{90314b763729b1d5f7e2617b703e66ee}
+      \strng{authorfullhash}{3dbb761df29e314e670b762cd74d2595}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the IEEE conference on computer vision and pattern recognition}
+      \field{title}{Efficient object localization using convolutional networks}
+      \field{year}{2015}
+      \field{pages}{648\bibrangedash 656}
+      \range{pages}{9}
+    \endentry
+    \entry{Toshev_2014}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=1ee35bc00bbae520d60769a153d7a5de}{%
+           family={Toshev},
+           familyi={T\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=ed568d9c3bb059e6bf22899fbf170f86}{%
+           family={Szegedy},
+           familyi={S\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{f35f8da1388dd92ee1febc5d0e3e125d}
+      \strng{fullhash}{f35f8da1388dd92ee1febc5d0e3e125d}
+      \strng{bibnamehash}{f35f8da1388dd92ee1febc5d0e3e125d}
+      \strng{authorbibnamehash}{f35f8da1388dd92ee1febc5d0e3e125d}
+      \strng{authornamehash}{f35f8da1388dd92ee1febc5d0e3e125d}
+      \strng{authorfullhash}{f35f8da1388dd92ee1febc5d0e3e125d}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2014 IEEE Conference on Computer Vision and Pattern Recognition}
+      \field{title}{DeepPose: Human Pose Estimation via Deep Neural Networks}
+      \field{year}{2014}
+      \field{pages}{1653\bibrangedash 1660}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1109/cvpr.2014.214
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1109/CVPR.2014.214
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1109/CVPR.2014.214
+      \endverb
+    \endentry
+    \entry{c3d}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=bf2f16d69891c385f08f1724200c5baf}{%
+           family={Tran},
+           familyi={T\bibinitperiod},
+           given={Du},
+           giveni={D\bibinitperiod}}}%
+        {{hash=a5d50cf5c085cd3a323d68588dcb89c8}{%
+           family={Bourdev},
+           familyi={B\bibinitperiod},
+           given={Lubomir},
+           giveni={L\bibinitperiod}}}%
+        {{hash=a6784304d1cc890b2cb6c6c7f2f3fd76}{%
+           family={Fergus},
+           familyi={F\bibinitperiod},
+           given={Rob},
+           giveni={R\bibinitperiod}}}%
+        {{hash=7174975989c609900098ef361edc9286}{%
+           family={Torresani},
+           familyi={T\bibinitperiod},
+           given={Lorenzo},
+           giveni={L\bibinitperiod}}}%
+        {{hash=d1976e858e503a89ab7e5fa48734c939}{%
+           family={Paluri},
+           familyi={P\bibinitperiod},
+           given={Manohar},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{df80e35986fbd1b814f8c2bee429287b}
+      \strng{fullhash}{eb4895fcbd59d688d9fa34227ca6ca1e}
+      \strng{bibnamehash}{df80e35986fbd1b814f8c2bee429287b}
+      \strng{authorbibnamehash}{df80e35986fbd1b814f8c2bee429287b}
+      \strng{authornamehash}{df80e35986fbd1b814f8c2bee429287b}
+      \strng{authorfullhash}{eb4895fcbd59d688d9fa34227ca6ca1e}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the IEEE international conference on computer vision}
+      \field{title}{Learning spatiotemporal features with 3d convolutional networks}
+      \field{year}{2015}
+      \field{pages}{4489\bibrangedash 4497}
+      \range{pages}{9}
+    \endentry
     \entry{vaswani2017attention}{article}{}
       \name{author}{1}{}{%
         {{hash=dd8654367c923279fc35fe561acfbf40}{%
@@ -889,6 +1216,135 @@
       \field{journaltitle}{Advances in Neural Information Processing Systems}
       \field{title}{Attention is all you need}
       \field{year}{2017}
+    \endentry
+    \entry{wang2013action}{inproceedings}{}
+      \name{author}{2}{}{%
+        {{hash=29fa9ac4da972e0174f94c469eae902a}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Heng},
+           giveni={H\bibinitperiod}}}%
+        {{hash=58e4a9845eac42a4b0e5205cf0970fc0}{%
+           family={Schmid},
+           familyi={S\bibinitperiod},
+           given={Cordelia},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{df55845429789b89109b679602c176df}
+      \strng{fullhash}{df55845429789b89109b679602c176df}
+      \strng{bibnamehash}{df55845429789b89109b679602c176df}
+      \strng{authorbibnamehash}{df55845429789b89109b679602c176df}
+      \strng{authornamehash}{df55845429789b89109b679602c176df}
+      \strng{authorfullhash}{df55845429789b89109b679602c176df}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the IEEE international conference on computer vision}
+      \field{title}{Action recognition with improved trajectories}
+      \field{year}{2013}
+      \field{pages}{3551\bibrangedash 3558}
+      \range{pages}{8}
+    \endentry
+    \entry{dense}{article}{}
+      \name{author}{4}{}{%
+        {{hash=29fa9ac4da972e0174f94c469eae902a}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Heng},
+           giveni={H\bibinitperiod}}}%
+        {{hash=e5b10cb4d985237b91013714995227f5}{%
+           family={Kläser},
+           familyi={K\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=58e4a9845eac42a4b0e5205cf0970fc0}{%
+           family={Schmid},
+           familyi={S\bibinitperiod},
+           given={Cordelia},
+           giveni={C\bibinitperiod}}}%
+        {{hash=e281c3b38181c6232893b3bf21de6b7d}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Cheng-Lin},
+           giveni={C\bibinithyphendelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{7b1f6ed89b27ad93d362cdbf9cddc44e}
+      \strng{fullhash}{142de1362f6db6eb17707e7113015801}
+      \strng{bibnamehash}{7b1f6ed89b27ad93d362cdbf9cddc44e}
+      \strng{authorbibnamehash}{7b1f6ed89b27ad93d362cdbf9cddc44e}
+      \strng{authornamehash}{7b1f6ed89b27ad93d362cdbf9cddc44e}
+      \strng{authorfullhash}{142de1362f6db6eb17707e7113015801}
+      \field{extraname}{1}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Conference on Computer Vision and Pattern Recognition}
+      \field{month}{06}
+      \field{title}{Action Recognition by Dense Trajectories}
+      \field{year}{2011}
+      \verb{doi}
+      \verb 10.1109/CVPR.2011.5995407
+      \endverb
+    \endentry
+    \entry{wang2016temporal}{inproceedings}{}
+      \name{author}{7}{}{%
+        {{hash=19e9bfb93cd5f50de827a51431a8d010}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Limin},
+           giveni={L\bibinitperiod}}}%
+        {{hash=d5051eb0f62df89577bc02f764c3f11a}{%
+           family={Xiong},
+           familyi={X\bibinitperiod},
+           given={Yuanjun},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=edcb27361de88ed2a8ec1c9dca30dd7a}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Zhe},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=2addc56ce0ea3a8fc05ff9b0995f74f4}{%
+           family={Qiao},
+           familyi={Q\bibinitperiod},
+           given={Yu},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=f4033e88b680ba7279a268e75f80b1d3}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={Dahua},
+           giveni={D\bibinitperiod}}}%
+        {{hash=7e09524e32e7b51c169850f848787677}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={Xiaoou},
+           giveni={X\bibinitperiod}}}%
+        {{hash=d3bc7b9be5061411a87f19fcdf39499c}{%
+           family={Van\bibnamedelima Gool},
+           familyi={V\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Luc},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{c5989e5d35c513cda241d5030fd85d29}
+      \strng{fullhash}{72536a9d8e7ae8abec078a2a7633f260}
+      \strng{bibnamehash}{c5989e5d35c513cda241d5030fd85d29}
+      \strng{authorbibnamehash}{c5989e5d35c513cda241d5030fd85d29}
+      \strng{authornamehash}{c5989e5d35c513cda241d5030fd85d29}
+      \strng{authorfullhash}{72536a9d8e7ae8abec078a2a7633f260}
+      \field{extraname}{2}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{European conference on computer vision}
+      \field{title}{Temporal segment networks: Towards good practices for deep action recognition}
+      \field{year}{2016}
+      \field{pages}{20\bibrangedash 36}
+      \range{pages}{17}
     \endentry
     \entry{wu2016learning}{article}{}
       \name{author}{5}{}{%
