@@ -254,6 +254,58 @@
       \field{title}{Neural machine translation by jointly learning to align and translate}
       \field{year}{2014}
     \endentry
+    \entry{openpose}{misc}{}
+      \name{author}{5}{}{%
+        {{hash=e59a7a0ecac3deea0c72e863b5c17634}{%
+           family={Cao},
+           familyi={C\bibinitperiod},
+           given={Zhe},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=d63960806471ec9177f5651a8f37927d}{%
+           family={Hidalgo},
+           familyi={H\bibinitperiod},
+           given={Gines},
+           giveni={G\bibinitperiod}}}%
+        {{hash=c9591f6ffd83f6ee3caa1e9d20c21a52}{%
+           family={Simon},
+           familyi={S\bibinitperiod},
+           given={Tomas},
+           giveni={T\bibinitperiod}}}%
+        {{hash=eeb215d31998bd52613e3d32b708040c}{%
+           family={Wei},
+           familyi={W\bibinitperiod},
+           given={Shih-En},
+           giveni={S\bibinithyphendelim E\bibinitperiod}}}%
+        {{hash=eec556189169ec6c7325cc7a804cbc02}{%
+           family={Sheikh},
+           familyi={S\bibinitperiod},
+           given={Yaser},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{8c1603e58c3074e7c4f62d42598b9304}
+      \strng{fullhash}{dbe56f960b8d421f6ae8ff2dd2b677c2}
+      \strng{bibnamehash}{8c1603e58c3074e7c4f62d42598b9304}
+      \strng{authorbibnamehash}{8c1603e58c3074e7c4f62d42598b9304}
+      \strng{authornamehash}{8c1603e58c3074e7c4f62d42598b9304}
+      \strng{authorfullhash}{dbe56f960b8d421f6ae8ff2dd2b677c2}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{title}{OpenPose: Realtime Multi-Person 2D Pose Estimation using Part Affinity Fields}
+      \field{year}{2019}
+      \verb{eprint}
+      \verb 1812.08008
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/abs/1812.08008
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/abs/1812.08008
+      \endverb
+    \endentry
     \entry{carreira2017quo}{inproceedings}{}
       \name{author}{2}{}{%
         {{hash=9769c01477fd6a34e0f7732729ee8eb4}{%
@@ -823,6 +875,59 @@
       \verb https://arxiv.org/abs/1606.02147
       \endverb
     \endentry
+    \entry{DeepCut}{inproceedings}{}
+      \name{author}{7}{}{%
+        {{hash=06811d5d7805aecec17edd74b4d32cda}{%
+           family={Pishchulin},
+           familyi={P\bibinitperiod},
+           given={Leonid},
+           giveni={L\bibinitperiod}}}%
+        {{hash=cca68edb09f6a03e32b8cfadaaf60d5c}{%
+           family={Insafutdinov},
+           familyi={I\bibinitperiod},
+           given={Eldar},
+           giveni={E\bibinitperiod}}}%
+        {{hash=5cbb4a7f1de1c38de155a32b3dabcc36}{%
+           family={Tang},
+           familyi={T\bibinitperiod},
+           given={Siyu},
+           giveni={S\bibinitperiod}}}%
+        {{hash=0b169c8acc727a0a41cb696b5195660b}{%
+           family={Andres},
+           familyi={A\bibinitperiod},
+           given={Bjoern},
+           giveni={B\bibinitperiod}}}%
+        {{hash=417c506960fec6aa8372e9881d6f6bc7}{%
+           family={Andriluka},
+           familyi={A\bibinitperiod},
+           given={Mykhaylo},
+           giveni={M\bibinitperiod}}}%
+        {{hash=1c2b8ffdc5cf73b31e9197a831f2735a}{%
+           family={Gehler},
+           familyi={G\bibinitperiod},
+           given={Peter\bibnamedelima V.},
+           giveni={P\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=457dd3049a60059cf69e775a47f0c154}{%
+           family={Schiele},
+           familyi={S\bibinitperiod},
+           given={Bernt},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{2a36c9cb6753e297c2b461ae1b59668b}
+      \strng{fullhash}{b92ae07c75128238bd42cacd9283fe3a}
+      \strng{bibnamehash}{2a36c9cb6753e297c2b461ae1b59668b}
+      \strng{authorbibnamehash}{2a36c9cb6753e297c2b461ae1b59668b}
+      \strng{authornamehash}{2a36c9cb6753e297c2b461ae1b59668b}
+      \strng{authorfullhash}{b92ae07c75128238bd42cacd9283fe3a}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}
+      \field{month}{6}
+      \field{title}{DeepCut: Joint Subset Partition and Labeling for Multi Person Pose Estimation}
+      \field{year}{2016}
+    \endentry
     \entry{redmon2016you}{inproceedings}{}
       \name{author}{1}{}{%
         {{hash=0712b65985612db5b055749502dad611}{%
@@ -1345,6 +1450,45 @@
       \field{year}{2016}
       \field{pages}{20\bibrangedash 36}
       \range{pages}{17}
+    \endentry
+    \entry{wei2016convolutional}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=eeb215d31998bd52613e3d32b708040c}{%
+           family={Wei},
+           familyi={W\bibinitperiod},
+           given={Shih-En},
+           giveni={S\bibinithyphendelim E\bibinitperiod}}}%
+        {{hash=59349ca06ecce9c12e95c451d09e3dfe}{%
+           family={Ramakrishna},
+           familyi={R\bibinitperiod},
+           given={Varun},
+           giveni={V\bibinitperiod}}}%
+        {{hash=45496c6a7530cfbfb4f3218a2602b77e}{%
+           family={Kanade},
+           familyi={K\bibinitperiod},
+           given={Takeo},
+           giveni={T\bibinitperiod}}}%
+        {{hash=eec556189169ec6c7325cc7a804cbc02}{%
+           family={Sheikh},
+           familyi={S\bibinitperiod},
+           given={Yaser},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{628e25b4914d7be76f334eac262d0be3}
+      \strng{fullhash}{a9a2c3430921c468e9181a410a9347b9}
+      \strng{bibnamehash}{628e25b4914d7be76f334eac262d0be3}
+      \strng{authorbibnamehash}{628e25b4914d7be76f334eac262d0be3}
+      \strng{authornamehash}{628e25b4914d7be76f334eac262d0be3}
+      \strng{authorfullhash}{a9a2c3430921c468e9181a410a9347b9}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the IEEE conference on Computer Vision and Pattern Recognition}
+      \field{title}{Convolutional pose machines}
+      \field{year}{2016}
+      \field{pages}{4724\bibrangedash 4732}
+      \range{pages}{9}
     \endentry
     \entry{wu2016learning}{article}{}
       \name{author}{5}{}{%
