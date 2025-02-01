@@ -395,6 +395,55 @@
       \field{title}{Neural machine translation by jointly learning to align and translate}
       \field{year}{2014}
     \endentry
+    \entry{cano2018musical}{article}{}
+      \name{author}{5}{}{%
+        {{hash=fb64fac98c86ef9d767e5949f1c3e89d}{%
+           family={Cano},
+           familyi={C\bibinitperiod},
+           given={Estefania},
+           giveni={E\bibinitperiod}}}%
+        {{hash=06f8f58081e1ab202eddcaadf9b4c1e0}{%
+           family={FitzGerald},
+           familyi={F\bibinitperiod},
+           given={Derry},
+           giveni={D\bibinitperiod}}}%
+        {{hash=a94cac21598af7fd16ff450f667f6ddd}{%
+           family={Liutkus},
+           familyi={L\bibinitperiod},
+           given={Antoine},
+           giveni={A\bibinitperiod}}}%
+        {{hash=af302f6b1171db4b3b2979f068a9bafe}{%
+           family={Plumbley},
+           familyi={P\bibinitperiod},
+           given={Mark\bibnamedelima D},
+           giveni={M\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=6f0bab58bfb39760fd46d5953261670c}{%
+           family={Stöter},
+           familyi={S\bibinitperiod},
+           given={Fabian-Robert},
+           giveni={F\bibinithyphendelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{db4daaa3c8eef728747eed06c8b53fe8}
+      \strng{fullhash}{206f6e2e8dd2e65ed7f7ecf2c5c892aa}
+      \strng{bibnamehash}{db4daaa3c8eef728747eed06c8b53fe8}
+      \strng{authorbibnamehash}{db4daaa3c8eef728747eed06c8b53fe8}
+      \strng{authornamehash}{db4daaa3c8eef728747eed06c8b53fe8}
+      \strng{authorfullhash}{206f6e2e8dd2e65ed7f7ecf2c5c892aa}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Signal Processing Magazine}
+      \field{number}{1}
+      \field{title}{Musical source separation: An introduction}
+      \field{volume}{36}
+      \field{year}{2018}
+      \field{pages}{31\bibrangedash 40}
+      \range{pages}{10}
+    \endentry
     \entry{openpose}{misc}{}
       \name{author}{5}{}{%
         {{hash=e59a7a0ecac3deea0c72e863b5c17634}{%
@@ -497,6 +546,80 @@
       \field{journaltitle}{arXiv preprint arXiv:1406.1078}
       \field{title}{Learning phrase representations using RNN encoder-decoder for statistical machine translation}
       \field{year}{2014}
+    \endentry
+    \entry{choi2016automatic}{article}{}
+      \name{author}{3}{}{%
+        {{hash=b606b90e18ab45578516e45e09262612}{%
+           family={Choi},
+           familyi={C\bibinitperiod},
+           given={Keunwoo},
+           giveni={K\bibinitperiod}}}%
+        {{hash=2ac0513685545181007c3906989094d6}{%
+           family={Fazekas},
+           familyi={F\bibinitperiod},
+           given={George},
+           giveni={G\bibinitperiod}}}%
+        {{hash=8f90fd131c2bbfde4d0e9fdd7ed4ea8b}{%
+           family={Sandler},
+           familyi={S\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{b40a33e3118709dcdea5c97b8c1e557b}
+      \strng{fullhash}{b40a33e3118709dcdea5c97b8c1e557b}
+      \strng{bibnamehash}{b40a33e3118709dcdea5c97b8c1e557b}
+      \strng{authorbibnamehash}{b40a33e3118709dcdea5c97b8c1e557b}
+      \strng{authornamehash}{b40a33e3118709dcdea5c97b8c1e557b}
+      \strng{authorfullhash}{b40a33e3118709dcdea5c97b8c1e557b}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:1606.00298}
+      \field{title}{Automatic tagging using deep convolutional neural networks}
+      \field{year}{2016}
+    \endentry
+    \entry{choi2017convolutional}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=b606b90e18ab45578516e45e09262612}{%
+           family={Choi},
+           familyi={C\bibinitperiod},
+           given={Keunwoo},
+           giveni={K\bibinitperiod}}}%
+        {{hash=f01574e8c7c9fed8acf0c76910a6a6f7}{%
+           family={Fazekas},
+           familyi={F\bibinitperiod},
+           given={György},
+           giveni={G\bibinitperiod}}}%
+        {{hash=8f90fd131c2bbfde4d0e9fdd7ed4ea8b}{%
+           family={Sandler},
+           familyi={S\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+        {{hash=3da7501a79d9346572c7fd6e41b615df}{%
+           family={Cho},
+           familyi={C\bibinitperiod},
+           given={Kyunghyun},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{7dc18f6f890356013a688d1f23c18504}
+      \strng{fullhash}{a4e58f3037fa175a305cc3ff6f842c32}
+      \strng{bibnamehash}{7dc18f6f890356013a688d1f23c18504}
+      \strng{authorbibnamehash}{7dc18f6f890356013a688d1f23c18504}
+      \strng{authornamehash}{7dc18f6f890356013a688d1f23c18504}
+      \strng{authorfullhash}{a4e58f3037fa175a305cc3ff6f842c32}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2017 IEEE International conference on acoustics, speech and signal processing (ICASSP)}
+      \field{title}{Convolutional recurrent neural networks for music classification}
+      \field{year}{2017}
+      \field{pages}{2392\bibrangedash 2396}
+      \range{pages}{5}
     \endentry
     \entry{donahue2015long}{inproceedings}{}
       \name{author}{7}{}{%
@@ -997,6 +1120,55 @@
       \field{journaltitle}{arXiv preprint arXiv:1608.08128}
       \field{title}{Temporal activity detection in untrimmed videos with recurrent neural networks}
       \field{year}{2016}
+    \endentry
+    \entry{nam2018deep}{article}{}
+      \name{author}{5}{}{%
+        {{hash=b7c57c9ad12471fb5ec7eb082cd69eeb}{%
+           family={Nam},
+           familyi={N\bibinitperiod},
+           given={Juhan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=b606b90e18ab45578516e45e09262612}{%
+           family={Choi},
+           familyi={C\bibinitperiod},
+           given={Keunwoo},
+           giveni={K\bibinitperiod}}}%
+        {{hash=8912bbafc6d0a1141663b19f6be61680}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Jongpil},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3d49e8b1ef590ddaedfd574237f8120d}{%
+           family={Chou},
+           familyi={C\bibinitperiod},
+           given={Szu-Yu},
+           giveni={S\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=dc4d44f6814797864181d8ee2756517f}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Yi-Hsuan},
+           giveni={Y\bibinithyphendelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{af65258f316903f9c8346d8de7eda424}
+      \strng{fullhash}{dfd7718c58ffae156d51fc88caf24388}
+      \strng{bibnamehash}{af65258f316903f9c8346d8de7eda424}
+      \strng{authorbibnamehash}{af65258f316903f9c8346d8de7eda424}
+      \strng{authornamehash}{af65258f316903f9c8346d8de7eda424}
+      \strng{authorfullhash}{dfd7718c58ffae156d51fc88caf24388}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE signal processing magazine}
+      \field{number}{1}
+      \field{title}{Deep learning for audio-based music classification and tagging: Teaching computers to distinguish rock from bach}
+      \field{volume}{36}
+      \field{year}{2018}
+      \field{pages}{41\bibrangedash 51}
+      \range{pages}{11}
     \endentry
     \entry{noh2015learning}{inproceedings}{}
       \name{author}{3}{}{%
